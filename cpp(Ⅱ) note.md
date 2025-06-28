@@ -133,67 +133,10 @@ public:
 };
 ```
 
----
-
-#### 五、注意事项
-1. **Lambda 表达式中的 this 捕获**  
-   ```cpp
-   class Widget {
-       int data;
-       void init() {
-           auto lambda = [this] { 
-               cout << data; // 正确捕获当前对象
-           };
-       }
-   };
-   ```
-
-2. **悬垂指针风险**  
-   ```cpp
-   class Dangerous {
-   public:
-       void badPractice() {
-           auto ptr = this; // 保存 this 指针到外部
-           // 若对象被销毁，ptr 将失效！
-       }
-   };
-   ```
-
-3. **与智能指针结合使用**  
-   ```cpp
-   class SafeObject : public enable_shared_from_this<SafeObject> {
-       void safeAccess() {
-           auto sptr = shared_from_this(); // 获得共享指针
-       }
-   };
-   ```
 
 ---
 
-#### 六、底层原理
-1. **编译器转换示例**  
-   ```cpp
-   // 原始代码
-   obj.method(param);
-   
-   // 编译器转换后
-   ClassName::method(&obj, param);
-   ```
-
-2. **内存布局示例**  
-   ```cpp
-   class Example {
-       int a;
-       double b;
-   };
-   ```
-   - `this` 指针指向对象内存的起始地址
-   - 成员访问 `this->a` 等价于 `*(this + 0)`
-   - 成员访问 `this->b` 等价于 `*(this + sizeof(int))`
-
----
-
-#### 七、典型面试问题
+**典型问题**
 1. `this` 指针可以为空吗？  
    - 当通过空指针调用成员函数时，若函数不访问成员变量，可能不会立即崩溃
    ```cpp
@@ -897,7 +840,7 @@ B，被声明为虚函数时可以调用重写的函数
 
 ---
 
- **常见问题与解决方案**
+ **常见问题**
 1. **切片问题（Slicing）**  
    - **现象**：派生类对象赋值给基类对象时，派生类特有部分被“切割”。
    - **解决**：使用基类**指针或引用**传递对象。
