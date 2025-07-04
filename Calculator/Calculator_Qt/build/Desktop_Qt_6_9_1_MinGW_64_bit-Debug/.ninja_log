@@ -1,0 +1,22 @@
+# ninja log v5
+11	42	0	CMakeFiles/clean.additional	c313c7df7a6a27c5
+42	110	0	clean	817a3ba66aae48cd
+62	127	0	D:/QT/project_ye/Calculator/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	cf17f01fff3f3795
+153	324	7707527359967316	calculator_autogen/timestamp	4254021d9719c40e
+153	324	7707527359967316	D:/QT/project_ye/Calculator/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/calculator_autogen/timestamp	4254021d9719c40e
+622	2601	7706712108233717	CMakeFiles/calculator.dir/calculator_autogen/mocs_compilation.cpp.obj	d6162d398fe05128
+153	324	7707527359967316	calculator_autogen/mocs_compilation.cpp	4254021d9719c40e
+153	324	7707527359967316	D:/QT/project_ye/Calculator/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/calculator_autogen/mocs_compilation.cpp	4254021d9719c40e
+328	3317	7707527397913110	CMakeFiles/calculator.dir/widget.cpp.obj	cac81c24e32226ba
+626	2641	7706712108653720	CMakeFiles/calculator.dir/main.cpp.obj	8fc827cd1790c67d
+3317	3752	7707527402249585	calculator.exe	e85d0b8eb60d6440
+147	2906	7707971628721836	build.ninja	92cc3b0d4a71014d
+303	998	7707150731809940	CMakeFiles/calculator.dir/bigNumCalculate.cpp.obj	751d5272a5af44be
+289	433	7707111234897685	CMakeFiles/calculator.dir/bignum.cpp.obj	f9aaa0a8d6442444
+16	82	0	D:/QT/project_ye/Calculator/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs	cf17f01fff3f3795
+102	321	7707971735365979	calculator_autogen/timestamp	4254021d9719c40e
+102	321	7707971735365979	calculator_autogen/mocs_compilation.cpp	4254021d9719c40e
+102	321	7707971735365979	D:/QT/project_ye/Calculator/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/calculator_autogen/timestamp	4254021d9719c40e
+102	321	7707971735365979	D:/QT/project_ye/Calculator/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/calculator_autogen/mocs_compilation.cpp	4254021d9719c40e
+325	3414	7707971771401734	CMakeFiles/calculator.dir/widget.cpp.obj	cac81c24e32226ba
+3414	4153	7707971778804039	calculator.exe	1f5c56daaf8ee243
